@@ -36,21 +36,21 @@ app.get("/result", (req, res) => {
     <!DOCTYPE html>
     <html>
     <head>
-      <title>My maturity level</title>
-      <meta property="og:title" content="My maturity level ${level}" />
+      <title>Result maturity level</title>
+      <meta property="og:title" content="Maturity level ${level}" />
       <meta property="og:description" content="Check out my result!" />
       <meta property="og:image" content="${imageUrl}" />
       <meta property="og:url" content="https://filum-ai.vercel.app" />
     </head>
     <body>
       <h1>Result Of User: ${user}</h1>
+      <br />
+      <img src=${imageUrl} style='width: 100%'/>
+      <br />
+      <br />
       <form style="display: inline" action="https://filum-ai.vercel.app" method="get">
        <button style='width: 100%; cursor: pointer; padding: 10px'>Check out my result!</button>
       </form>
-      
-      <br />
-      <br />
-      <img src=${imageUrl} style='width: 100%'/>
     </body>
     </html>
   `);
