@@ -7,8 +7,8 @@ app.use(express.static("public"));
 
 // Dynamic route for sharing results
 app.get("/result", (req, res) => {
-  const level = req.query.level;
-  const user = req.query.user;
+  const level = req.query.level || 1;
+  const user = req.query.user || "Anonymous";
 
   let imageUrl;
 
